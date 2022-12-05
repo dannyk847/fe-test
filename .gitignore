@@ -1,0 +1,8 @@
+.vscode
+.bash_history
+.coverage
+.pytest_cache
+__pycache__
+celerybeat-schedule
+/static
+/media
