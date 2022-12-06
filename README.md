@@ -1,15 +1,6 @@
-# docker-demo
+# fe-test
 
-
-## Docker
-### Installation
-* https://docs.docker.com/get-docker/
-
-### Container
-* web: Python Django web application
-* db: PostgreSQL database
-
-### Commands
+## Docker commands
 ```
 docker compose build
 docker compose up -d
@@ -22,8 +13,7 @@ docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)
 ```
 
-## Web Application Endpoints
-
+## Backend
 ```
 localhost:8000/api (GET, POST)
 
@@ -35,4 +25,10 @@ POST request data for creating a `DanceClass` record
 }
 ```
 
-The `POST` endpoint returns an error when attempting to create a duplicate `DanceClass` record
+The `POST` endpoint returns a `400` error when attempting to create a duplicate `DanceClass` record
+
+## Frontend
+```
+npm install
+npm run dev
+```
